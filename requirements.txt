@@ -1,0 +1,9 @@
+pandas
+matplotlib
+seaborn
+nltk
+nlp-id
+scikit-learn
+streamlit
+streamlit-option-menu
+python-dotenv
