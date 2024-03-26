@@ -25,7 +25,7 @@ def renderPage():
         #foto
         with st.container():
             img_path = st.secrets.path_configuration['path_image']
-            berkas_foto = "foto_diri.png"
+            berkas_foto = "foto_diri.PNG"
             col_1_c1_col_1, col_1_c1_col_2, col_1_c1_col_3 = st.columns([1,8,1])
             with col_1_c1_col_1:
                 st.write("")
