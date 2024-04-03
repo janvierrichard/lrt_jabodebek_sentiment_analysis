@@ -15,11 +15,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import pickle
 from nlp_core.text_processing import TextProcessing
+import streamlit as st
 
 class Sentiment_Analysis:
-    def __init__(self, config) -> None:
-        self.model_path = config['PATH_MODEL_ML']
-        self.dataset_path = config['PATH_DATASET']
+    def __init__(self) -> None:
+        # self.model_path = config['PATH_MODEL_ML']
+        # self.dataset_path = config['PATH_DATASET']
+        self.model_path = st.secrets['path_configuration']['path_model']
+        self.dataset_path = st.secrets['path_configuration']['path_dataset']
         self.dataset_name = "lrt_jabodebek_labeled.csv"
         self.model_filename = "model.sav"
         self.vectorizer_filename = "vector.sav"
