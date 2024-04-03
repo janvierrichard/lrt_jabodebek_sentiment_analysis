@@ -18,6 +18,6 @@ def renderPage():
         if userText != "":
             with st.spinner(text = "Sentiment Prediction is loading..."):
                 st.text("")
-                sa = Sentiment_Analysis(env)
+                sa = Sentiment_Analysis()
                 result = sa.predict_sentiment(userText)
                 st.text(result)
