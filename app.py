@@ -10,3 +10,6 @@ if page == "Biodata":
     biodata.renderPage()
 elif page == "LRT Jabodebek Sentiment Analysis":
     lrt_sentiment_analysis_page.renderPage()
+
+if __name__ == "__main__":
+    nltk.download('popular')
