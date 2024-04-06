@@ -90,7 +90,7 @@ class Sentiment_Analysis:
         vector_data = vector.transform(data).toarray()
         hasil = model.predict(vector_data)
 
-        if hasil[0] == 0:
+        if hasil[0] == 'negatif':
             sentiment = "Negatif"
         else:
             sentiment = "Positif"
